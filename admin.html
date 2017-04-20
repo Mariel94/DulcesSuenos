@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Dulces Sueños</title>
+    <!---JS----->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/scriptAdmin.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/session.js"></script>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+    
+<body>
+<!-- NAVBAR  -->
+        <nav class="nav-extended #8e24aa purple darken-2">
+        <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo"><img id="logo" src="/FinalProject/images/logo.png"></a>    
+        <ul class="right hide-on-med-and-down">
+            <li><a id="usershow"></a></li>
+            <li><a href="admin.html"><i class="material-icons" id="admin" >build</i></a></li>
+            <li><a><i class="material-icons" id="logout" >power_settings_new</i></a></li>
+            <li><a href="index.html"><i class="material-icons">home</i></a></li>
+            <li id="log"><a href="logIn.html"><i class="material-icons">account_circle</i></a></li>
+            <li id="wish"><a href="wishlist.html"><i class="material-icons">favorite_border</i></a></li>
+            <li id="cart"><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
+             
+        </ul>
+        </div>
+        <div class="nav-wrapper">
+            <ul class="left hide-on-med-and-down">      
+                <li><a class="dropdown-button" href="#!" data-activates="blancos">Blancos</a></li>   
+                <li><a class="dropdown-button" href="#!" data-activates="cobertores">Cobertores</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="decoracion">Decoración</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="paseo">Paseo</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="basicos">Básicos</a></li>
+            </ul>
+        </div>
+        </nav>
+        <!-- Dropdown Structure -->
+        <ul id="blancos" class="dropdown-content">
+            <li><a id="setEdredones" href="portfolio.html">Set de edredón</a></li>
+            <li><a id="cojinReflujo" href="portfolio.html">Cojín Anti Vuelco</a></li>
+            <li><a id="edredonCunaPortatil" href="portfolio.html">Edredón Cuna Portatil</a></li>
+            <li><a id="juegoCortinas" href="portfolio.html">Juego de Cortinas</a></li>
+            <li><a id="protectorImpermeable" href="portfolio.html">Protector Impermeable</a></li>
+            <li><a id="sabanitasCamiseta" href="portfolio.html">Sabanitas de Camiseta</a></li>
+        </ul>
+        <ul id="cobertores" class="dropdown-content">
+            <li><a id="chiquiAlaska" href="portfolio.html">Chiqui sack Alaska</a></li>
+            <li><a id="chiquiBordado" href="portfolio.html">Chiqui sack bordado</a></li>
+            <li><a id="cobertorAlaska" href="portfolio.html">Cobertor Alaska</a></li>
+            <li><a id="cobertorBordado" href="portfolio.html">Cobertor bordado</a></li>
+            <li><a id="cobertorLigero" href="portfolio.html">Cobertor ligero</a></li>
+        </ul>
+        <ul id="decoracion" class="dropdown-content">
+            <li><a id="babyPuff" href="portfolio.html">Baby Puff</a></li>
+            <li><a id="bolsaLavanderia" href="portfolio.html">Bolsa de lavandería</a></li>
+            <li><a id="cambiador" href="portfolio.html">Cambiador</a></li>
+            <li><a id="cestoMultiusos" href="portfolio.html">Cesto multiusos</a></li>
+            <li><a id="chiquiMascotas" href="portfolio.html">Chiqui mascotas</a></li>
+            <li><a id="miniCunas" href="portfolio.html">Mini Cunas</a></li>
+            <li><a id="organizador" href="portfolio.html">Organizador</a></li>
+            <li><a id="playMat" href="portfolio.html">Play mat</a></li>
+            <li><a id="playMatSupersoft" href="portfolio.html">Play mat supersoft</a></li>
+            <li><a id="portaPanales" href="portfolio.html">Porta pañales</a></li>
+            <li><a id="respaldoDiversion" href="portfolio.html">Respaldo diversión</a></li>
+        </ul>
+        <ul id="paseo" class="dropdown-content">
+          <li><a id="babyComfort" href="portfolio.html">Baby Comfort</a></li>
+          <li><a id="bambinetos" href="portfolio.html">Bambinetos</a></li>
+          <li><a id="bolsitas" href="portfolio.html">Bolsitas</a></li>
+          <li><a id="caminador" href="portfolio.html">Caminador</a></li>
+          <li><a id="camitaPortatil" href="portfolio.html">Camita Portátil</a></li>
+          <li><a id="cangurera" href="portfolio.html">Cangureras</a></li>
+          <li><a id="carriolas" href="portfolio.html">Carriolas</a></li>
+          <li><a id="cojinCuello" href="portfolio.html">Cojín para cuello</a></li>
+          <li><a id="chiquiBag" href="portfolio.html">Chiqui bag</a></li>
+          <li><a id="coordinadoPortabebe" href="portfolio.html">Coordinado portabebé</a></li>
+          <li><a id="cunaPortatil" href="portfolio.html">Cuna portátil</a></li>
+          <li><a id="mochilitas" href="portfolio.html">Mochilitas</a></li>
+          <li><a id="panalera" href="portfolio.html">Pañaleras</a></li>
+          <li><a id="portabebes" href="portfolio.html">Portabebés</a></li>
+          <li><a id="cambiadorToallas" href="portfolio.html">Cambiador y Porta Toallas</a></li>
+          <li><a id="rebozos" href="portfolio.html">Rebozos</a></li>
+          <li><a id="sabanitaLactancia" href="portfolio.html">Sabanita de lactancia</a></li>
+        </ul>
+        <ul id="basicos" class="dropdown-content">
+          <li><a id="abrazables" href="portfolio.html">Abrazables</a></li>
+          <li><a id="almohaditas" href="portfolio.html">Almohaditas</a></li>
+          <li><a id="almohaditaJumbo" href="portfolio.html">Almohadita jumbo</a></li>
+          <li><a id="babyBouncer" href="portfolio.html">Baby bouncer</a></li>
+          <li><a id="batitas" href="portfolio.html">Batitas</a></li>
+          <li><a id="batitaSupersoft" href="portfolio.html">Batita supersoft</a></li>
+          <li><a id="cojinDescanso" href="portfolio.html">Cojín de descanso</a></li>
+          <li><a id="cojinMultiusos" href="portfolio.html">Cojín multiusos</a></li>
+          <li><a id="colchonAntiReflujo" href="portfolio.html">Colchón anti reflujo</a></li>
+          <li><a id="costalitos" href="portfolio.html">Costalitos</a></li>
+          <li><a id="frazadaChiqui" href="portfolio.html">Frazada chiqui fleece</a></li>
+          <li><a id="frazadaLigera" href="portfolio.html">Frazada ligera</a></li>
+          <li><a id="batitas" href="portfolio.html">Batitas</a></li>
+          <li><a id="pantuflas" href="portfolio.html">Pantuflas</a></li>
+          <li><a id="pijamitas" href="portfolio.html">Pijamitas</a></li>
+          <li><a id="sabanitas" href="portfolio.html">Sabanitas para bebé</a></li>
+          <li><a id="baberos" href="portfolio.html">Set de baberos y repetidor</a></li>
+          <li><a id="setSabanitas" href="portfolio.html">Set de sabanitas</a></li>
+          <li><a id="setPanaleros" href="portfolio.html">Set de pañaleros</a></li>
+          <li><a id="setToallitas" href="portfolio.html">Set de toallitas</a></li>
+          <li><a id="toallitas" href="portfolio.html">Toallitas</a></li>
+        </ul>
+<!--Container-->
+<div class="container">
+    <div class= "row">
+<!-- EDIT ADMIN  -->
+        <br/>
+        <div class="title2" id="miCuentaAdmin">Mi Cuenta</div>
+        <br/>
+        <table id="adminTable">
+            <tr class="tRow">
+                <th class="tHead">Usuario</th>
+                
+                <th class="tHead">Nombre <a class="white-text" href="#!"><i id="editNA" class="material-icons right">mode_edit</i><i id="saveNA" class="material-icons right" style="display: none;">save</i></a></th>
+                
+                <th class="tHead">Apellido <a class="white-text" href="#!"><i id="editLA" class="material-icons right">mode_edit</i><i id="saveLA" class="material-icons right" style="display: none;">save</i></a></th>
+                
+                <th class="tHead">Email <a class="white-text" href="#!"><i id="editEA" class="material-icons right">mode_edit</i><i id="saveEA" class="material-icons right" style="display: none;">save</i></a></th>
+                
+                <th class="tHead">Género</th>
+                <th class="tHead">Estado</th>
+            </tr>
+        </table>
+<!-- REGISTER NEW PRODUCT  -->
+        <div class="col s6">
+            <h4 class="title2">AGREGA UN NUEVO ARTÍCULO</h4>
+                <fieldset id="NuevoArticulo">
+                    <h6 class="page-subheading">Ingresa los datos</h6>
+                    <div class="form_content clearfix">
+                        <div class="input-field col s12">
+                           <select id="category">
+                            <option value="0" disabled selected>Elige la categoría...</option>
+                            <option value = "1">Blancos</option>
+					        <option value = "2">Cobertores</option>
+					        <option value = "3">Decoración</option>
+					        <option value = "4">Paseo</option>
+                            <option value = "5">Básicos</option>
+                            </select>
+                            <label for="category">Categoría</label>
+                        </div>
+                        <div id="subcat1" class="input-field col s12" style="display:none">
+                            <select id="subcategory1">
+                            <option value="0" disabled selected>Elige la subcategoría...</option>
+                            <option value = "1">Set de edredón</option>
+					        <option value = "2">Cojín Anti Vuelco</option>
+					        <option value = "3">Edredón Cuna Portátil</option>
+					        <option value = "4">Juego de Cortínas</option>
+                            <option value = "5">Protector Impermeable</option>
+                            <option value = "6">Sabanitas de Camiseta </option>
+                            </select>
+                            <label for="subcategory1"> Subcategoría </label>
+                        </div>
+                        <div id="subcat2" class="input-field col s12" style="display:none">
+                            <select id="subcategory2">
+                            <option value="0" disabled selected>Elige la subcategoría...</option>
+                            <option value = "1">Chiqui Sack Alaska</option>
+					        <option value = "2">Chiqui Sack Bordado</option>
+					        <option value = "3">Cobertor Alaska Cunero</option>
+					        <option value = "4">Cobertor Bordado Cunero</option>
+                            <option value = "5">Cobertor Ligero Cunero</option>
+                            </select>
+                            <label for="subcategory2">Subcategoría</label>
+                        </div>
+                        <div id="subcat3" class="input-field col s12" style="display:none">
+                            <select id="subcategory3">
+                            <option value="0" disabled selected>Elige la subcategoría...</option>
+                            <option value = "1">Baby Puff</option>
+					        <option value = "2">Bolsa de Lavanderia</option>
+					        <option value = "3">Cambiador</option>
+					        <option value = "4">Cobertor Bordado Cunero</option>
+                            <option value = "5">Cesto Multiusos</option>
+                            <option value = "6">Chiqui Mascotas</option>
+                            <option value = "7">Mini Cunas</option>
+                            <option value = "8">Organizador</option>
+                            <option value = "9">Play Mat</option>
+                            <option value = "10">Play Mat Supersoft</option>
+                            <option value = "11">Porta Pañales</option>
+                            <option value = "12">Respaldo Diversion</option>
+                            </select>
+                            <label for="subcategory3"> Subcategoría </label>
+                        </div>
+                        <div id="subcat4" class="input-field col s12" style="display:none">
+                            <select id="subcategory4">
+                            <option value="0" disabled selected>Elige la subcategoría...</option>
+                            <option value = "1">Baby Comfort</option>
+					        <option value = "2">Bambinetos</option>
+					        <option value = "3">Bolsitas</option>
+					        <option value = "4">Caminador</option>
+                            <option value = "5">Camita Portatil</option>
+                            <option value = "6">Cangureras</option>
+                            <option value = "7">Carriolas</option>
+                            <option value = "8">Cojin para Cuello</option>
+                            <option value = "9">Chiqui Bag</option>
+                            <option value = "10">Coordinado para Portabebe</option>
+                            <option value = "11">Cuna Portatil</option>
+                            <option value = "12">Mochilitas</option>
+                            <option value = "13">Pañaleras</option>
+                            <option value = "14">Portabebes</option>
+                            <option value = "15">Cambiador y Porta Toallas</option>
+                            <option value = "16">Rebozos</option>
+                            <option value = "17">Sabanita de Lactancia</option>
+                            </select>
+                            <label for="subcategory4"> Subcategoría </label>
+                        </div>
+                        <div id="subcat5" class="input-field col s12" style="display:none">
+                            <select id="subcategory5">
+                            <option value="0" disabled selected>Elige la subcategoría...</option>
+                            <option value = "1">Abrazables</option>
+					        <option value = "2">Almohaditas</option>
+					        <option value = "3">Almohaditas Jumbo</option>
+					        <option value = "4">Baby Bouncer</option>
+                            <option value = "5">Batitas</option>
+                            <option value = "6">Batitas Supersoft</option>
+                            <option value = "7">Cojin de Descanso</option>
+                            <option value = "8">Cojin Multiusos</option>
+                            <option value = "9">Colchon Anti Reflujo</option>
+                            <option value = "10">Costalitos</option>
+                            <option value = "11">Frazada Chiqui Fleece</option>
+                            <option value = "12">Frazada Ligera</option>
+                            <option value = "13">Mi Primera Batita</option>
+                            <option value = "14">Pantuflas</option>
+                            <option value = "15">Pijamitas</option>
+                            <option value = "16">Sabanitas para Bebe</option>
+                            <option value = "17">Set de Baberos y Repetidor</option>
+                            <option value = "18">Set de Sabanitas</option>
+                            <option value = "19">Set de Panaleros</option>
+                            <option value = "20">Set de Toallitas</option>
+                            <option value = "21">Toallitas</option>
+                            </select>
+                            <label for="subcategory5"> Subcategoría </label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" id="nameArticle"/> 
+                            <label for="nameArticle"> Nombre </label>
+                        </div>                        
+                        <div class="input-field col s12">
+                            <input type="text" id="priceArticle"/> 
+                            <label for="priceArticle"> Precio </label>
+                        </div> 
+                        <div class="input-field col s12">
+                            <input type="text" id="description"/> 
+                            <label for="description"> Descripción </label>
+                        </div> 
+                        <div class="input-field col s12">
+                            <input type="text" id="contains"/> 
+                            <label for="contains"> Contiene </label>
+                        </div> 
+                        <div class="input-field col s12">
+                            <input type="text" id="compose"/> 
+                            <label for="compose"> Composición </label>
+                        </div> 
+                        <div class="input-field col s12">
+                            <input type="text" id="size"/> 
+                            <label for="size"> Medidas </label>
+                        </div>
+                        
+                         <form action="#">
+                             <div class="file-field input-field col s12">
+                                 <div class="btn">
+                                     <span>IMAGEN</span>
+                                     <input type="file">
+                                 </div>
+                                 <div class="file-path-wrapper">
+                                     <input id="newPic" class="file-path validate" type="text">
+                                 </div>
+                             </div>
+                        </form>
+                    <p class="center"><button id="addArticle" class="btn waves-effect waves-light" type="submit" name="action">AGREGAR
+                    <i class="material-icons right">send</i>
+                    </button></p>
+                        </div>
+            </fieldset>
+        </div>
+<!-- DELETE PRODUCT  -->
+        <div class="col s4">
+            <h4 class="title2">ELIMINA UN ARTÍCULO</h4>
+            <fieldset >
+                <h6 class="page-subheading">Ingresa el ID del artículo a eliminar</h6>
+                <div class="form_content clearfix">
+                    <div class="input-field col s12">
+                        <input id="deleteIDInventory" type="text">
+                        <label for="deleteIDInventory">ID</label>
+                    </div>                   
+                    <br/>
+                    <p class="center">
+                    <button id="deleteFromInventory" class="btn waves-effect waves-light" type="submit" name="action">Eliminar
+                    <i class="material-icons right">send</i>
+                    </button>
+                    </p>
+                </div>
+            </fieldset>
+        </div>
+        <br/>
+<!-- DELETE USER  -->
+        <div class="col s4">
+            <h4 class="title2">ELIMINA UN USUARIO</h4>
+            <fieldset id="DeleteUsuario">
+                <h6 class="page-subheading">Ingresa el Usuario a eliminar</h6>
+                <div class="form_content clearfix">
+                    <div class="input-field col s12">
+                        <input id="userDelete" type="text">
+                        <label for="userDelete">Nombre de Usuario</label>
+                    </div>                   
+                    <br/>
+                    <p class="center">
+                    <button id="deleteUser" class="btn waves-effect waves-light" type="submit" name="action">Eliminar
+                    <i class="material-icons right">send</i>
+                    </button>
+                    </p>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <br/>
+    <br/>
+<!-- SHOW USERS -->
+    <div class="row">
+        <div class="title2" id="myUsers">Usuarios Registrados</div>
+        <br/>
+        <table id="usersTable">
+            <tr class=tRow>
+                <th class="tHead">Usuario</th>
+                <th class="tHead">Nombre</th>
+                <th class="tHead">Apellido</th>
+                <th class="tHead">Email</th>
+                <th class="tHead">Género</th>
+                <th class="tHead">Estado</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- FOOTER  -->
+  <footer class="page-footer #8e24aa purple darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 s12">
+          <h5 class="white-text">Dulces Sueños</h5>
+            <ul>
+                <li><a class="white-text" href="dsInfo.html#contacto">Contáctanos</a></li>
+                <li><a class="white-text" href="dsInfo.html#historia">¿Quiénes Somos?</a></li>
+                <li><a class="white-text" href="dsInfo.html#comprar">¿Cómo Comprar?</a></li>
+            </ul>
+        </div>
+        <div id="adminFooter" class="col l4 s12">
+          <h5 class="white-text">Mi Cuenta</h5>
+          <ul>
+            <li><a class="white-text" href="wishlist.html#wishDiv">Mi lista de deseos</a></li>
+            <li><a class="white-text" href="wishlist.html#miCuenta">Mi Perfil</a></li>
+          </ul>
+        </div>      
+         <div class="col l4 s12">
+          <h5 class="white-text">Contacto</h5>
+            <p class="grey-text text-lighten-4"><i class="material-icons">location_on</i>Simón Bolívar 1225 nte. Col. Mitras Centro </p>
+            <p class="mdi mdi-facebook-box mdi-24px mdi-light grey-text text-lighten-4">@dulcess07</p>
+            <p class="mdi mdi-phone mdi-24px mdi-light grey-text text-lighten-4">96277529</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2017 <a class="orange-text text-lighten-3">Dulces Sueños</a>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

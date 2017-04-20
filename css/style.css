@@ -1,0 +1,132 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+#carousel {
+  height: 400px;
+}
+#carousel-item {
+    max-height: 100%;
+    max-width: 100%;
+}
+#Registro{
+    margin-right:100px;
+}
+#logo{
+    max-width: 150px;
+    max-height: 80px;
+}
+.wron{
+    color : red;
+    font-size: 11px;
+}
+.title{
+    font-size : 2.5em;
+    background : #00B4A7;
+    color : white;
+    text-align: center;
+    font-family: Kristen ITC;
+    padding: 10px;
+}
+.title2{
+    font-size : 1.3em;
+    background : #00B4A7;
+    color : white;
+    text-align: center;
+    font-family: Century Gothic;
+    padding: 10px;
+}
+#profileTable, #wishTable{
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #00cccc;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+	font-size: 16px;
+}
+.tHead{
+    color: purple;
+    border: 2px solid #eee;
+    padding: 12px 35px;
+    border-collapse: collapse;
+}
+.tHead {
+    background: purple;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+td:hover {
+    color: #555;
+}
+#nuestraHistoria{
+    max-width:100%;
+}
+#historyText{
+    text-align:justify;
+    font-family: Century Gothic;
+    font-size: 1.3em;
+}
+#novedades1{
+    max-width: 100%;
+}
+#novedades2{
+    max-width: 100%;
+}
+#novedades3{
+    max-width: 100%;
+}
+#novedades4{
+    max-width: 100%;
+}
+#map {
+  	width: 100%; 
+  	height: 300px;
+	margin: 0;
+	padding: 15px;
+}
+#logout{
+    display: none;
+}
+#admin{
+    display: none;
+}
+#Subtitle{
+    font-weight: bold;
+}
+.cora{
+    display: none;
+}
+.idval{
+    display: none;
+}
+.info{
+    font-family: Century Gothic;
+    font-size: 1.2em;
+    color:cadetblue;
+}
+.wishlist{
+    max-width: 100px;
+    max-height: 100px;
+}
+#settings{
+    position: absolute; 
+    display: inline-block; 
+    right: 250px; 
+    height: 588px;
+    
+}
